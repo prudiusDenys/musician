@@ -74,7 +74,7 @@
       width: 101vw;
       height: 100vh;
       background-color: rgba(0, 0, 0, 0.9);
-      top: 0px;
+      top: 0;
       left: 50%;
       transform: translateX(-50%);
       text-align: center;
@@ -152,7 +152,7 @@
     padding-top: 80px;
 
     .discography__box:last-child {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 }
@@ -390,7 +390,7 @@
 }
 
 .compositions__column {
-  padding: 32px 60px 0px 35px;
+  padding: 32px 60px 0 35px;
   width: 50%;
   background-color: $compositions__bg;
   position: relative;
@@ -636,7 +636,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 155px 0px 85px 0px;
+    padding: 155px 0 85px 0;
     position: relative;
 
     &::before {
@@ -739,7 +739,7 @@
 }
 
 .slick-arrow {
-  font-size: 0px;
+  font-size: 0;
   border: none;
   cursor: pointer;
   padding: 0;
@@ -798,7 +798,7 @@
 
   @media(max-width: 450px) {
     .slider__inner {
-      padding: 70px 0px 70px 0px;
+      padding: 70px 0 70px 0;
     }
   }
 }
@@ -908,7 +908,7 @@
   &__inner {
     max-width: 610px;
     margin-left: auto;
-    padding: 185px 40px 185px 0px;
+    padding: 185px 40px 185px 0;
 
     .title {
       color: #42717e;
@@ -955,7 +955,7 @@
       width: 2px;
       height: 52px;
       background-color: #000;
-      top: 0px;
+      top: 0;
       left: 34px;
     }
 
@@ -965,7 +965,7 @@
       width: 2px;
       height: 165px;
       background-color: #000;
-      bottom: 0px;
+      bottom: 0;
       left: 34px;
     }
   }
@@ -986,13 +986,13 @@
 @media(max-width: 800px) {
   .upcoming__events__inner {
     margin-left: 0;
-    padding: 185px 0px 185px 40px;
+    padding: 185px 0 185px 40px;
   }
 }
 
 @media(max-width: 800px) {
   .upcoming__events__inner {
-    padding: 70px 0px 70px 20px;
+    padding: 70px 0 70px 20px;
   }
 }
 
@@ -1229,7 +1229,7 @@
           width: 100%;
           @include f400;
           color: $textColor;
-          padding: 0px 10px;
+          padding: 0 10px;
           background-color: transparent;
           outline: none;
         }
@@ -1253,7 +1253,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 12px 20px 0px 0px;
+    margin: 12px 20px 0 0;
     position: relative;
     padding-left: 17px;
 
@@ -1327,7 +1327,7 @@
 
 @media(max-width: 450px){
   .contact .contact__inner{
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 100px;
   }
   .contact__title::before{
