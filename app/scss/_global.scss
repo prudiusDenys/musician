@@ -12,19 +12,20 @@ html {
 }
 
 html,
-body{
+body {
   width: 100%;
   height: 100%;
   position: relative;
 
-  &.lock{
+  &.lock {
     overflow: hidden;
   }
 }
 
-body{
+body {
   overflow-x: hidden;
   min-width: 320px;
+  font-size: 14px;
 }
 
 a {
@@ -43,4 +44,64 @@ li {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Dosis';
+  font-size: 51px;
+  letter-spacing: 6px;
+  color: #000;
+  margin-top: 155px;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  position: relative;
+  background-clip: text;
+  color: transparent;
+
+  &::before {
+    content: '';
+    position: absolute;
+    max-width: 502px;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50.5%, -50%);
+  }
+}
+
+.text {
+  max-width: 720px;
+  text-align: center;
+  margin: 0 auto;
+  @include f400;
+  line-height: 24px;
+  letter-spacing: 1.8px;
+  color: $textColor;
+  margin-bottom: 140px;
+}
+
+@media (max-width: 470px) {
+  .title {
+    font-size: 31px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    letter-spacing: 1px;
+  }
+
+  .text {
+    margin-bottom: 70px;
+  }
 }
